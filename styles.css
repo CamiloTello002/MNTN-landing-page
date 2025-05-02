@@ -11,8 +11,29 @@ body {
 }
 
 .header {
+	color: white;
 	height: 150vh;
 	background-image: url('./imgs/header-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5rem;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 4rem 6rem;
+	width: 65vw;
+}
+
+.nav ul {
+	display: flex;
+	list-style-type: none;
+	gap: 1rem;
+}
+
+.brand {
+	font-size: 2.5rem;
 }
