@@ -32,6 +32,15 @@ body {
 	display: flex;
 	list-style-type: none;
 	gap: 1rem;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .brand {
