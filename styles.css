@@ -78,4 +78,12 @@ body {
 
 .hero__scroll-down {
 	font-family: Poppins;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+
+	&::after {
+		content: '↓';
+		font-size: 3rem;
+	}
 }
