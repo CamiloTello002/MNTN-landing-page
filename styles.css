@@ -103,15 +103,20 @@ body {
 
 .content {
 	background-color: var(--bg-color);
-	padding: 30rem;
+	padding: 0 15rem;
 	box-shadow: 0 0px 76px 100px var(--bg-color);
 	z-index: 100;
+	position: relative;
+	height: 100vh;
 }
 
 .get-started {
 	&::before {
 		content: '01';
 		font-family: Poppins;
-		font-size: 40rem;
+		font-size: 20rem;
+		position: absolute;
+		top: -20rem;
+		color: rgba(255, 255, 255, 0.5);
 	}
 }
