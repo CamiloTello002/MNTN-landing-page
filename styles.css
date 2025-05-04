@@ -104,7 +104,7 @@ body {
 .content {
 	background-color: var(--bg-color);
 	padding: 30rem;
-	box-shadow: 0 -4px 6px -1px var(--bg-color);
+	box-shadow: 0 0px 76px 100px var(--bg-color);
 	z-index: 100;
 }
 
