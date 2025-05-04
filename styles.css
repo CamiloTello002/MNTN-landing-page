@@ -131,7 +131,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 15rem;
-	/*height: 100vh;*/
+
+	@media (width >=1550px) {
+		padding: 0 33rem 10rem;
+	}
 }
 
 .get-started {
