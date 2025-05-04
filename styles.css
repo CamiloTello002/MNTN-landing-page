@@ -40,6 +40,11 @@ body {
 	ul {
 		font-family: Poppins;
 	}
+
+	@media (width >=1550px) {
+		width: 100vw;
+		justify-content: space-around;
+	}
 }
 
 .nav ul {
@@ -119,7 +124,7 @@ body {
 
 .content {
 	background-color: var(--bg-color);
-	padding: 0 15rem;
+	padding: 0 15rem 10rem;
 	box-shadow: 0 0px 76px 100px var(--bg-color);
 	z-index: 100;
 	position: relative;
@@ -235,13 +240,14 @@ body {
 }
 
 .footer {
-	display: grid;
-	grid-template-columns: auto 300px 300px;
+	display: flex;
+	gap: 4rem;
 	height: fit-content;
 }
 
 .mntn-footer {
 	display: flex;
+	flex-grow: 1;
 	flex-direction: column;
 	gap: 3rem;
 	font-size: 2rem;
@@ -255,6 +261,7 @@ body {
 
 	p {
 		max-width: 50%;
+		flex-grow: 1;
 	}
 
 	small {
@@ -269,7 +276,6 @@ body {
 	gap: 2rem;
 	font-size: 1.5rem;
 	font-family: Poppins;
-	padding-bottom: 9rem;
 
 	h2 {
 		font-weight: 400;
