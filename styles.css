@@ -129,17 +129,13 @@ body {
 
 .content {
 	background-color: var(--bg-color);
-	padding: 0 15rem 10rem;
 	box-shadow: 0 0px 76px 100px var(--bg-color);
+	padding: 0 2rem 10rem;
 	z-index: 100;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 15rem;
-
-	@media (width >=1550px) {
-		padding: 0 33rem 10rem;
-	}
 }
 
 .get-started {
@@ -251,6 +247,11 @@ body {
 	display: flex;
 	gap: 4rem;
 	height: fit-content;
+	flex-direction: column-reverse;
+
+	@media (width >=1200px) {
+		flex-direction: row;
+	}
 }
 
 .mntn-footer {
@@ -297,5 +298,15 @@ body {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+	}
+}
+
+.footer__second-section {
+	display: flex;
+	gap: 4rem;
+	flex-direction: column;
+
+	@media (width >=600px) {
+		flex-direction: row;
 	}
 }
