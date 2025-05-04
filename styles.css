@@ -132,6 +132,14 @@ body {
 .get-started {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.get-started__content--1 {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-left: 8rem;
+	position: relative;
 
 	&::before {
 		content: '01';
@@ -140,15 +148,9 @@ body {
 		font-weight: 900;
 		position: absolute;
 		top: -10rem;
+		left: 0;
 		color: rgba(255, 255, 255, 0.1);
 	}
-}
-
-.get-started__content {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	padding-left: 8rem;
 }
 
 .get-started__content--2 {
