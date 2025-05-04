@@ -111,12 +111,16 @@ body {
 }
 
 .get-started {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
 	&::before {
 		content: '01';
 		font-family: Poppins;
-		font-size: 20rem;
+		font-size: 15rem;
+		font-weight: 900;
 		position: absolute;
-		top: -20rem;
-		color: rgba(255, 255, 255, 0.5);
+		top: -10rem;
+		color: rgba(255, 255, 255, 0.1);
 	}
 }
