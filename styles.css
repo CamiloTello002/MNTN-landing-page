@@ -260,3 +260,26 @@ body {
 		opacity: 0.5;
 	}
 }
+
+.blog-footer {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	gap: 2rem;
+	font-size: 1.5rem;
+	font-family: Poppins;
+
+	h2 {
+		font-weight: 400;
+		color: var(--second-color);
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
