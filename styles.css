@@ -143,3 +143,17 @@ body {
 	font-size: 1.5rem;
 	line-height: 1.5;
 }
+
+.get-started__picture {
+	position: relative;
+	border-radius: 1rem;
+	overflow: hidden;
+	top: -8rem;
+	margin: 0 5rem;
+}
+
+.img-01 {
+	object-fit: cover;
+	width: 100%;
+	width: 100%
+}
