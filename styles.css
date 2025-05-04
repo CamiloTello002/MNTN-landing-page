@@ -45,6 +45,11 @@ body {
 		width: 100vw;
 		justify-content: space-around;
 	}
+
+	@media (width < 1200px) {
+		width: 100vw;
+		padding: 4rem 2rem;
+	}
 }
 
 .nav ul {
