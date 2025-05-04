@@ -10,17 +10,19 @@
 body {
 	display: flex;
 	flex-direction: column;
+	--bg-color: #0B1D26;
 }
 
 .header {
 	color: white;
-	height: 150vh;
+	height: 125vh;
 	background-image: url('./imgs/header-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	font-size: 1.5rem;
+	z-index: 0;
 }
 
 .nav {
@@ -96,5 +98,20 @@ body {
 
 	100% {
 		transform: translateY(0%);
+	}
+}
+
+.content {
+	background-color: var(--bg-color);
+	padding: 30rem;
+	box-shadow: 0 -4px 6px -1px var(--bg-color);
+	z-index: 100;
+}
+
+.get-started {
+	&::before {
+		content: '01';
+		font-family: Poppins;
+		font-size: 40rem;
 	}
 }
