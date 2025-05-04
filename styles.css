@@ -7,10 +7,16 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	--bg-color: #0B1D26;
+	--second-color: #FBD784;
 }
 
 .header {
@@ -63,7 +69,7 @@ body {
 }
 
 .hero__hiking-guide {
-	color: #FBD784;
+	color: var(--second-color);
 	letter-spacing: .4rem;
 	font-family: Poppins;
 
@@ -98,6 +104,16 @@ body {
 
 	100% {
 		transform: translateY(0%);
+	}
+}
+
+@keyframes bounce-left-right {
+	50% {
+		transform: translateX(20%);
+	}
+
+	100% {
+		transform: translateX(0%);
 	}
 }
 
@@ -156,4 +172,21 @@ body {
 	object-fit: cover;
 	width: 100%;
 	width: 100%
+}
+
+.read-more {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	color: var(--second-color);
+	font-family: Poppins;
+	font-size: 1.2rem;
+
+	&::after {
+		content: '→';
+		font-size: 3rem;
+		position: relative;
+		top: -8px;
+		animation: bounce-left-right 2s infinite;
+	}
 }
